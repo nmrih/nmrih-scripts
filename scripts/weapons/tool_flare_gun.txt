@@ -1,0 +1,73 @@
+// Flare Gun
+
+WeaponData
+{
+	// Weapon data is loaded by both the Game and Client DLLs.
+	"printname"			"Weapon_tool_flare_gun"
+	"viewmodel"			"models/weapons/fa_flaregun/v_fa_flaregun.mdl"
+	"playermodel"			"models/weapons/fa_flaregun/w_fa_flaregun.mdl"
+	"anim_prefix"			"python"
+	"bucket"				"0"
+	"bucket_position"		"0"
+
+	"CycleTime"			"-1"	// -1 means use SequenceDuration
+
+	"clip_size"			"1"
+	"primary_ammo"			"flare"
+	"secondary_ammo"		"None"
+
+	"weight"			"50"
+	"max_throw_force"		"10"
+	"item_flags"			"6"
+
+	"muzzle_flash"			"NMRIH_FLARE_FLASH"
+
+	// Sounds for the weapon. There is a max of 16 sounds per category (i.e. max 16 "single_shot" sounds)
+	SoundData
+	{
+		"single_shot"		"FlareGun.Fire"
+		"melee_hit"		"Weapon_Crowbar.Melee_Hit"
+		"melee_hit_world"	"Weapon_Crowbar.Melee_HitWorld"
+	}
+
+	// Weapon Sprite data is loaded by the Client DLL.
+	TextureData
+	{
+		"weapon"
+		{
+				"font"		"WeaponIcons"
+				"character"	"c"
+		}
+		"weapon_s"
+		{	
+				"font"		"WeaponIconsSelected"
+				"character"	"c"
+		}
+		"ammo"
+		{
+				"font"		"WeaponIcons"
+				"character"	"c"
+		}
+		"ammo2"
+		{
+			"file"		"sprites/640hud7"
+			"x"			"48"
+			"y"			"72"
+			"width"		"24"
+			"height"	"24"
+		}
+		"crosshair"
+		{
+				"font"		"Crosshairs"
+				"character"	"Q"
+		}
+		"autoaim"
+		{
+			"file"		"sprites/crosshairs"
+			"x"			"0"
+			"y"			"48"
+			"width"		"24"
+			"height"	"24"
+		}
+	}
+}

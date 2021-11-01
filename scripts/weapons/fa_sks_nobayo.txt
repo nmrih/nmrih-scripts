@@ -1,0 +1,78 @@
+// SKS 7.62mm
+
+WeaponData
+{
+	// Weapon data is loaded by both the Game and Client DLLs.
+	"printname"	"Weapon_fa_sks_nobayo"
+	"viewmodel"				"models/weapons/fa_sks/v_fa_sks_nobayo.mdl"
+	"playermodel"			"models/weapons/fa_sks/w_fa_sks_nobayo.mdl"
+	"anim_prefix"			"rifle"
+	"bucket"				"4"
+	"bucket_position"		"0"
+
+	"Damage"			"150"
+	"HeadshotDamage"		"600"
+
+	"CycleTime"			"0.1"
+
+	"clip_size"				"10"
+	"primary_ammo"			"762mm"
+	"secondary_ammo"		"None"
+
+	"weight"			"380"
+	"item_flags"			"6" // 1<<2 + 1<<1; ITEM_FLAG_NOAUTOSWITCHEMPTY|ITEM_FLAG_NOAUTORELOAD
+
+	"muzzle_flash"			"NMRIH_RIFLE_FLASH"
+
+	"AllowsSuicide"			"1"
+	"SuicideParticle"		"nmrih_suicide_smg"
+
+	// Sounds for the weapon. There is a max of 16 sounds per category (i.e. max 16 "single_shot" sounds)
+	SoundData
+	{
+		"single_shot"		"Weapon_SKS.Single"
+		"melee_hit"			"Weapon_Crowbar.Melee_Hit"
+		"melee_hit_world"	"Weapon_Crowbar.Melee_HitWorld"
+	}
+
+	// Weapon Sprite data is loaded by the Client DLL.
+	TextureData
+	{
+		"weapon"
+		{
+				"font"		"WeaponIcons"
+				"character"	"c"
+		}
+		"weapon_s"
+		{	
+				"font"		"WeaponIconsSelected"
+				"character"	"c"
+		}
+		"ammo"
+		{
+				"font"		"WeaponIcons"
+				"character"	"c"
+		}
+		"ammo2"
+		{
+			"file"		"sprites/640hud7"
+			"x"			"48"
+			"y"			"72"
+			"width"		"24"
+			"height"	"24"
+		}
+		"crosshair"
+		{
+				"font"		"Crosshairs"
+				"character"	"Q"
+		}
+		"autoaim"
+		{
+			"file"		"sprites/crosshairs"
+			"x"			"0"
+			"y"			"48"
+			"width"		"24"
+			"height"	"24"
+		}
+	}
+}

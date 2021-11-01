@@ -1,0 +1,81 @@
+// Colt 1911
+
+WeaponData
+{
+	// Weapon data is loaded by both the Game and Client DLLs.
+	"printname"		"Weapon_fa_1911"
+	"viewmodel"		"models/weapons/fa_1911/v_fa_1911.mdl"
+	"playermodel"		"models/weapons/fa_1911/w_fa_1911.mdl"
+	"anim_prefix"		"python"
+	"bucket"		"2"
+	"bucket_position"	"2"
+
+	"Damage"			"75"
+	"HeadshotDamage"		"600"
+
+	"CycleTime"			"0.2"
+
+	"clip_size"			"7"
+	"default_clip"		"7"
+	"primary_ammo"		"45ACP"
+	"secondary_ammo"	"None"
+
+	"weight"		"120"
+	"item_flags"		"6" // 1<<2 + 1<<1; ITEM_FLAG_NOAUTOSWITCHEMPTY|ITEM_FLAG_NOAUTORELOAD
+
+	"muzzle_flash"		"NMRIH_PISTOL_FLASH"
+
+	"ITEM_FLAG_SKILLSHOT"	"1"
+
+	"MuzzleSmokeCount"		"5"
+	"MuzzleSmokeTime"		"8.0"
+
+	"FullAmmoThreshold"			"7"
+
+	"AllowsSuicide"			"1"
+	"SuicideParticle"		"nmrih_suicide_pistol"
+
+	// Sounds for the weapon. There is a max of 16 sounds per category (i.e. max 16 "single_shot" sounds)
+	SoundData
+	{
+		"reload"		"Weapon_1911.Reload"
+		"empty"			"Weapon_1911.Empty"
+		"single_shot"		"Weapon_1911.Single"
+		"draw"			"Weapon_1911.Draw"
+		"bash_hit"		"Weapon_1911.BashHit"
+		"bash_miss"		"Weapon_1911.BashMiss"
+	}
+
+	// Weapon Sprite data is loaded by the Client DLL.
+	TextureData
+	{
+		"weapon"
+		{
+				"font"		"WeaponIcons"
+				"character"	"e"
+		}
+		"weapon_s"
+		{	
+				"font"		"WeaponIconsSelected"
+				"character"	"e"
+		}
+		"ammo"
+		{
+				"font"		"WeaponIcons"
+				"character"	"q"
+		}
+		"crosshair"
+		{
+				"font"		"Crosshairs"
+				"character"	"Q"
+		}
+		"autoaim"
+		{
+				"file"		"sprites/crosshairs"
+				"x"			"0"
+				"y"			"48"
+				"width"		"24"
+				"height"	"24"
+		}
+	}
+}

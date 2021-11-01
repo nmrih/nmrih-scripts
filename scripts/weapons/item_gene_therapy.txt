@@ -1,0 +1,27 @@
+// Gene Therapy vaccine
+
+WeaponData
+{
+	// Weapon data is loaded by both the Game and Client DLLs.
+	"printname"	"Weapon_item_gene_therapy"
+	"viewmodel"				"models/items/genetherapy/v_item_genetherapy.mdl"
+	"playermodel"			"models/items/genetherapy/item_genetherapy.mdl"
+	"npcmodel"				"models/items/genetherapy/item_genetherapy.mdl"
+	"playermodel"			""
+	"anim_prefix"			"crowbar"
+	"bucket"				"0"
+	"bucket_position"		"7"
+
+	"MeleeWeapon"			"1"
+	"CycleTime"				"-1"	// -1 means use SequenceDuration
+
+	"clip_size"				"-1"
+	"primary_ammo"			"None"
+	"secondary_ammo"		"None"
+
+	"weight"				"35"
+	"max_throw_force"		"1000"
+	"item_flags"			"0"
+	
+	"autoswitchto"			"0"		// Medical items don't auto-switch
+}

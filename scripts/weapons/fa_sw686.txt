@@ -1,0 +1,85 @@
+// Smith & Wesson 686
+
+WeaponData
+{
+	// Weapon data is loaded by both the Game and Client DLLs.
+	"printname"	"Weapon_fa_sw686"
+	"viewmodel"				"models/weapons/fa_sw686/v_fa_sw686.mdl"
+	"playermodel"			"models/weapons/fa_sw686/w_fa_sw686.mdl"
+	"anim_prefix"			"pistol"
+	"bucket"				"2"
+	"bucket_position"		"3"
+
+	"Damage"			"125"
+	"HeadshotDamage"		"600"
+
+	"CycleTime"			"-1"
+
+	"clip_size"				"6"
+	"primary_ammo"			"357"
+	"secondary_ammo"		"None"
+
+	"max_throw_force"		"300"	
+	"weight"			"130"
+	"item_flags"			"6" // 1<<2 + 1<<1; ITEM_FLAG_NOAUTOSWITCHEMPTY|ITEM_FLAG_NOAUTORELOAD
+
+	"muzzle_flash"			"NMRIH_357_FLASH"
+
+	"MuzzleSmokeCount"		"5"
+	"MuzzleSmokeTime"		"14.0"
+
+	"ITEM_FLAG_PENETRATION"		"1"
+	"ITEM_FLAG_SKILLSHOT"		"1"
+
+	"AllowsSuicide"			"1"
+	"SuicideParticle"		"nmrih_suicide_pistol"
+
+	// Sounds for the weapon. There is a max of 16 sounds per category (i.e. max 16 "single_shot" sounds)
+	SoundData
+	{
+		"single_shot"		"Weapon_686.Single"
+		"melee_hit"			"Weapon_Crowbar.Melee_Hit"
+		"melee_hit_world"	"Weapon_Crowbar.Melee_HitWorld"
+	}
+
+	// Weapon Sprite data is loaded by the Client DLL.
+	TextureData
+	{
+		"weapon"
+		{
+				"font"		"WeaponIcons"
+				"character"	"c"
+		}
+		"weapon_s"
+		{	
+				"font"		"WeaponIconsSelected"
+				"character"	"c"
+		}
+		"ammo"
+		{
+				"font"		"WeaponIcons"
+				"character"	"c"
+		}
+		"ammo2"
+		{
+			"file"		"sprites/640hud7"
+			"x"			"48"
+			"y"			"72"
+			"width"		"24"
+			"height"	"24"
+		}
+		"crosshair"
+		{
+				"font"		"Crosshairs"
+				"character"	"Q"
+		}
+		"autoaim"
+		{
+			"file"		"sprites/crosshairs"
+			"x"			"0"
+			"y"			"48"
+			"width"		"24"
+			"height"	"24"
+		}
+	}
+}

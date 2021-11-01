@@ -1,0 +1,75 @@
+// Chainsaw
+
+WeaponData
+{
+	// Weapon data is loaded by both the Game and Client DLLs.
+	"printname"	"Weapon_me_chainsaw"
+	"viewmodel"				"models/weapons/me_chainsaw/v_me_chainsaw.mdl"
+	"playermodel"			"models/weapons/me_chainsaw/w_me_chainsaw.mdl"
+	"anim_prefix"			"crowbar"
+	"bucket"				"1"
+	"bucket_position"		"0"
+
+	"Damage"			"65"
+	"HeadshotDamage"		"160"
+
+	"MeleeWeapon"			"1"
+	"CycleTime"			"-1"	// -1 means use SequenceDuration
+
+	"clip_size"				"100"
+	"primary_ammo"			"fuel"
+	"secondary_ammo"		"None"
+
+	"weight"			"600"
+	"max_throw_force"		"10"
+	"item_flags"			"6" // 1<<2 + 1<<1; ITEM_FLAG_NOAUTOSWITCHEMPTY|ITEM_FLAG_NOAUTORELOAD
+
+	// Sounds for the weapon. There is a max of 16 sounds per category (i.e. max 16 "single_shot" sounds)
+	SoundData
+	{
+		"single_shot"		"Weapon_Crowbar.Single"
+		"melee_hit"			"Weapon_Knife.Slash"
+		"melee_hit_world"	"Weapon_Crowbar.Melee_HitWorld"
+	}
+
+	// Weapon Sprite data is loaded by the Client DLL.
+	TextureData
+	{
+		"weapon"
+		{
+				"font"		"WeaponIcons"
+				"character"	"c"
+		}
+		"weapon_s"
+		{	
+				"font"		"WeaponIconsSelected"
+				"character"	"c"
+		}
+		"ammo"
+		{
+				"font"		"WeaponIcons"
+				"character"	"c"
+		}
+		"ammo2"
+		{
+			"file"		"sprites/640hud7"
+			"x"			"48"
+			"y"			"72"
+			"width"		"24"
+			"height"	"24"
+		}
+		"crosshair"
+		{
+				"font"		"Crosshairs"
+				"character"	"Q"
+		}
+		"autoaim"
+		{
+			"file"		"sprites/crosshairs"
+			"x"			"0"
+			"y"			"48"
+			"width"		"24"
+			"height"	"24"
+		}
+	}
+}

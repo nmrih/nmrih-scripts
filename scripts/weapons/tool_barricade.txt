@@ -1,0 +1,89 @@
+// Barricade Hammer
+
+WeaponData
+{
+	// Weapon data is loaded by both the Game and Client DLLs.
+	"printname"	"Weapon_tool_barricade"
+	"viewmodel"			"models/weapons/tool_barricade/v_tool_barricade.mdl"
+	"playermodel"			"models/weapons/tool_barricade/w_tool_barricade.mdl"
+	"anim_prefix"			"crowbar"
+	"bucket"			"0"
+	"bucket_position"		"3"
+
+	"Damage"			"70"
+	"HeadshotDamage"		"210"
+
+	"MeleeWeapon"			"1"
+
+	"clip_size"				"1"
+	"primary_ammo"			"board"
+	"secondary_ammo"		"None"
+
+	"weight"			"80"
+	"max_throw_force"		"700"
+	"item_flags"			"4" // 1<<2; ITEM_FLAG_NOAUTOSWITCHEMPTY
+	"QuickAttackStaminaCost"	"10"
+	"SwingTrailParticleName"	"nmrih_melee_hammer"
+
+	// Sounds for the weapon. There is a max of 16 sounds per category (i.e. max 16 "single_shot" sounds)
+	SoundData
+	{
+		"single_shot"		"Weapon_Melee.SwipeLight"
+		"melee_hit"			"Weapon_Crowbar.Melee_Hit"
+		"melee_hit_world"	"Weapon_Crowbar.Melee_HitWorld"
+	}
+
+	// Weapon Sprite data is loaded by the Client DLL.
+	TextureData
+	{
+		"weapon"
+		{
+				"font"		"WeaponIcons"
+				"character"	"c"
+		}
+		"weapon_s"
+		{	
+				"font"		"WeaponIconsSelected"
+				"character"	"c"
+		}
+		"ammo"
+		{
+				"font"		"WeaponIcons"
+				"character"	"c"
+		}
+		"ammo2"
+		{
+			"file"		"sprites/640hud7"
+			"x"			"48"
+			"y"			"72"
+			"width"		"24"
+			"height"	"24"
+		}
+		"crosshair"
+		{
+				"font"		"Crosshairs"
+				"character"	"Q"
+		}
+		"autoaim"
+		{
+			"file"		"sprites/crosshairs"
+			"x"			"0"
+			"y"			"48"
+			"width"		"24"
+			"height"	"24"
+		}
+	}
+	ModelBounds
+	{
+		Viewmodel
+		{
+			Mins	"-15.988 -20.557 -26.681"
+			Maxs	"41.405 16.224 2.769"
+		}
+		World
+		{
+			Mins	"-2.890 -0.891 -6.327"
+			Maxs	"2.947 0.747 11.162"
+		}
+	}
+}

@@ -1,0 +1,87 @@
+// Winchester 1892
+
+WeaponData
+{
+	// Weapon data is loaded by both the Game and Client DLLs.
+	"printname"	"Weapon_fa_winchester1892"
+	"viewmodel"			"models/weapons/fa_win1892/v_fa_win1892.mdl"
+	"playermodel"			"models/weapons/fa_win1892/w_fa_win1892.mdl"
+	"npcmodel"			"models/weapons/fa_win1892/w_fa_win1892.mdl"
+	"anim_prefix"			"shotgun"
+	"bucket"			"3"
+	"bucket_position"		"0"
+
+	"Damage"			"125"
+	"HeadshotDamage"		"600"
+
+	"CycleTime"			"-1"	// -1 means use SequenceDuration
+
+	"clip_size"			"15"
+	"primary_ammo"			"357"
+	"secondary_ammo"		"None"
+
+	"HalfAmmoThreshold"		"7"
+	"OverHalfAmmoThreshold"		"10"
+	"AlmostFullAmmoThreshold"	"13"
+	"FullAmmoThreshold"		"15"
+
+
+	"weight"			"300"
+	"item_flags"			"6" // 1<<2 + 1<<1; ITEM_FLAG_NOAUTOSWITCHEMPTY|ITEM_FLAG_NOAUTORELOAD
+
+	"muzzle_flash"			"NMRIH_PISTOL_FLASH"
+
+
+	"ITEM_FLAG_PENETRATION"		"1"
+
+	"AllowsSuicide"			"1"
+	"SuicideParticle"		"nmrih_suicide_smg"
+
+	// Sounds for the weapon. There is a max of 16 sounds per category (i.e. max 16 "single_shot" sounds)
+	SoundData
+	{
+		"single_shot"		"Weapon_Win1892.Single"
+		"empty"			"Weapon_Win1892.DryFire"
+	}
+
+	// Weapon Sprite data is loaded by the Client DLL.
+	TextureData
+	{
+		"weapon"
+		{
+				"font"		"WeaponIcons"
+				"character"	"c"
+		}
+		"weapon_s"
+		{	
+				"font"		"WeaponIconsSelected"
+				"character"	"c"
+		}
+		"ammo"
+		{
+				"font"		"WeaponIcons"
+				"character"	"c"
+		}
+		"ammo2"
+		{
+			"file"		"sprites/640hud7"
+			"x"			"48"
+			"y"			"72"
+			"width"		"24"
+			"height"	"24"
+		}
+		"crosshair"
+		{
+				"font"		"Crosshairs"
+				"character"	"Q"
+		}
+		"autoaim"
+		{
+			"file"		"sprites/crosshairs"
+			"x"			"0"
+			"y"			"48"
+			"width"		"24"
+			"height"	"24"
+		}
+	}
+}

@@ -1,0 +1,79 @@
+// Mossberg 500a
+
+WeaponData
+{
+	// Weapon data is loaded by both the Game and Client DLLs.
+	"printname"	"Weapon_fa_500a"
+	"viewmodel"			"models/weapons/fa_500a/v_fa_500a.mdl"
+	"playermodel"			"models/weapons/fa_500a/w_fa_500a.mdl"
+	"npcmodel"			"models/weapons/fa_500a/w_fa_500a.mdl"
+	"anim_prefix"			"shotgun"
+	"bucket"			"3"
+	"bucket_position"		"0"
+
+	"Damage"			"25"
+	"HeadshotDamage"		"200"
+
+	"Bullets"			"10"
+	"CycleTime"			"-1"	// -1 means use SequenceDuration
+
+	"clip_size"			"5"
+	"primary_ammo"			"12gauge"
+	"secondary_ammo"		"None"
+
+	"weight"			"350"
+	"item_flags"			"6" // 1<<2 + 1<<1; ITEM_FLAG_NOAUTOSWITCHEMPTY|ITEM_FLAG_NOAUTORELOAD
+
+	"muzzle_flash"			"NMRIH_SHOTGUN_FLASH"
+
+	"AllowsSuicide"			"1"
+	"SuicideParticle"		"nmrih_suicide_shotgun"
+
+	// Sounds for the weapon. There is a max of 16 sounds per category (i.e. max 16 "single_shot" sounds)
+	SoundData
+	{
+		"single_shot"		"Weapon_500Pump.Single"
+		"empty"			"Weapon_500Pump.DryFire"
+	}
+
+	// Weapon Sprite data is loaded by the Client DLL.
+	TextureData
+	{
+		"weapon"
+		{
+				"font"		"WeaponIcons"
+				"character"	"c"
+		}
+		"weapon_s"
+		{	
+				"font"		"WeaponIconsSelected"
+				"character"	"c"
+		}
+		"ammo"
+		{
+				"font"		"WeaponIcons"
+				"character"	"c"
+		}
+		"ammo2"
+		{
+			"file"		"sprites/640hud7"
+			"x"			"48"
+			"y"			"72"
+			"width"		"24"
+			"height"	"24"
+		}
+		"crosshair"
+		{
+				"font"		"Crosshairs"
+				"character"	"Q"
+		}
+		"autoaim"
+		{
+			"file"		"sprites/crosshairs"
+			"x"			"0"
+			"y"			"48"
+			"width"		"24"
+			"height"	"24"
+		}
+	}
+}

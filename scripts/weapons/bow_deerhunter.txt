@@ -1,0 +1,78 @@
+// PSE Deer Hunter
+
+WeaponData
+{
+	// Weapon data is loaded by both the Game and Client DLLs.
+	"printname"			"Weapon_bow_deerhunter"
+	"viewmodel"			"models/weapons/bow_deerhunter/v_bow_deerhunter.mdl"
+	"playermodel"		"models/weapons/bow_deerhunter/w_bow_deerhunter.mdl"
+	"anim_prefix"		"rifle"
+	"bucket"		"4"
+	"bucket_position"	"1"
+
+	"CycleTime"			"-1"
+
+	"Damage"			"20"
+	"HeadshotDamage"		"900"
+
+	"clip_size"			"1"
+	"primary_ammo"			"arrow"
+	"secondary_ammo"		"None"
+
+	"weight"			"150"
+	"max_throw_force"		"150"
+	"item_flags"			"6" // 1<<2 + 1<<1; ITEM_FLAG_NOAUTOSWITCHEMPTY|ITEM_FLAG_NOAUTORELOAD
+
+	"muzzle_flash"			"NMRIH_RIFLE_FLASH"
+
+	"ITEM_FLAG_PENETRATION"		"1"
+
+	// Sounds for the weapon. There is a max of 16 sounds per category (i.e. max 16 "single_shot" sounds)
+	SoundData
+	{
+		"single_shot"		"Weapon_DeerHunter.Single"
+		"melee_hit"			"Weapon_Crowbar.Melee_Hit"
+		"melee_hit_world"	"Weapon_Crowbar.Melee_HitWorld"
+	}
+
+	// Weapon Sprite data is loaded by the Client DLL.
+	TextureData
+	{
+		"weapon"
+		{
+				"font"		"WeaponIcons"
+				"character"	"c"
+		}
+		"weapon_s"
+		{	
+				"font"		"WeaponIconsSelected"
+				"character"	"c"
+		}
+		"ammo"
+		{
+				"font"		"WeaponIcons"
+				"character"	"c"
+		}
+		"ammo2"
+		{
+			"file"		"sprites/640hud7"
+			"x"			"48"
+			"y"			"72"
+			"width"		"24"
+			"height"	"24"
+		}
+		"crosshair"
+		{
+				"font"		"Crosshairs"
+				"character"	"Q"
+		}
+		"autoaim"
+		{
+			"file"		"sprites/crosshairs"
+			"x"			"0"
+			"y"			"48"
+			"width"		"24"
+			"height"	"24"
+		}
+	}
+}

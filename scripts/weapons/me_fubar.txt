@@ -1,0 +1,78 @@
+// Fubar
+
+WeaponData
+{
+	// Weapon data is loaded by both the Game and Client DLLs.
+	"printname"	"Weapon_me_fubar"
+	"viewmodel"				"models/weapons/me_fubar/v_me_fubar.mdl"
+	"playermodel"			"models/weapons/me_fubar/w_me_fubar.mdl"
+	"anim_prefix"			"crowbar"
+	"bucket"				"1"
+	"bucket_position"		"4"
+
+	"DamageType"			"blunt"
+	"Damage"			"110"
+	"HeadshotDamage"		"680"
+
+	"MeleeWeapon"			"1"
+	"CycleTime"			"-1"	// -1 means use SequenceDuration
+
+	"clip_size"			"-1"
+	"primary_ammo"			"None"
+	"secondary_ammo"		"None"
+
+	"weight"			"450"
+	"max_throw_force"		"350"
+	"item_flags"			"0"
+	"QuickAttackStaminaCost"	"40"
+	"SwingTrailParticleName"	"nmrih_melee_sledgehammer"
+
+	// Sounds for the weapon. There is a max of 16 sounds per category (i.e. max 16 "single_shot" sounds)
+	SoundData
+	{
+		"single_shot"		"Weapon_Crowbar.Single"
+		"melee_hit"			"Weapon_Knife.Slash"
+		"melee_hit_world"	"Weapon_Crowbar.Melee_HitWorld"
+	}
+
+	// Weapon Sprite data is loaded by the Client DLL.
+	TextureData
+	{
+		"weapon"
+		{
+				"font"		"WeaponIcons"
+				"character"	"c"
+		}
+		"weapon_s"
+		{	
+				"font"		"WeaponIconsSelected"
+				"character"	"c"
+		}
+		"ammo"
+		{
+				"font"		"WeaponIcons"
+				"character"	"c"
+		}
+		"ammo2"
+		{
+			"file"		"sprites/640hud7"
+			"x"			"48"
+			"y"			"72"
+			"width"		"24"
+			"height"	"24"
+		}
+		"crosshair"
+		{
+				"font"		"Crosshairs"
+				"character"	"Q"
+		}
+		"autoaim"
+		{
+			"file"		"sprites/crosshairs"
+			"x"			"0"
+			"y"			"48"
+			"width"		"24"
+			"height"	"24"
+		}
+	}
+}
